@@ -1,0 +1,33 @@
+
+<!DOCTYPE html><html lang='en'>
+<head>
+
+<title>Audio Player</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head><body>
+<audio id="music" src="Track1.mp3" type="audio/mp3" controls="controls" preload="auto" ontimeupdate="updateTime()">
+  Your browser does not support the <code>audio</code> element.
+</audio>
+
+<div id="player">
+  <img src="img1.jpg" />
+  <div class="description">
+    <p class="song-name">Suite No 1 in G Major </p>
+    <p class="song-artist">Johann Sebastian Bach</p>
+  </div>
+  <button id="pButton" class="play"></button>
+  <div class="time">
+    <span id="current">00:00</span>
+    <span> / </span>
+    <span id="total">00:00</span>
+  </div>
+</div>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src="main.js"></script>
+
+</body></html>
